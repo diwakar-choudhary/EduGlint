@@ -1,0 +1,339 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="online learning">
+  <meta name="author" content="eduglint">
+  <title>EduGlint</title>
+
+  <!--bootstrap css-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!--bootstrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!--icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!--style-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <!--start header-->
+  <div id="header">
+    <label class="logo"><img src="image/logomod.png" alt="logo" class="logo-edu"></label>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </label>
+    <ul class="head-uno">
+      <li class="head-list"><a class="head-link" href="#home">Home</a></li>
+      <li class="head-list"><a class="head-link" href="#about">About</a></li>
+      <li class="head-list"><a class="head-link" href="#courses">Courses</a></li>
+      <li class="head-list"><a class="head-link" href="#teams">Teams</a></li>
+      <li class="head-list"><a class="head-link" href="#contacts">Contacts</a></li>
+    </ul>
+  </div>
+  <!--end header-->
+  <!--start front body-->
+  <div id="home">
+    <label class="home-head">Learn To Code<label for="colon" class="home-head-col">;></label></label>
+    <br>
+    <label class="home-head2"><---With your EduGlint---></label>
+    <div class="wrapper">
+      <nav class="search-input">
+        <a href="" target="blank" hidden></a>
+        <input type="text" placeholder="Search Our Courses e.g, HTML.." class="home-input" id="coursesearch">
+        <nav class="icon"><i class="fas fa-search" onclick="results()"></i></nav>
+        <div class="autocom-box">
+          <!-- here list is inserted through javascript-->
+        </div>
+      </nav>
+    </div>
+   <!-- <label class="four" for="tuitorials"><b> Select The Course&nbsp;
+        <select name="tuitorials" id="opt" size="one" onchange="window.location.href=this.value;">
+          <option value=""> </option>
+          <option value="#tuitorialshtml"> HTML</option>
+          <option value="#tuitorialscss">CSS</option>
+          <option value="#tuitorialsjs">Javascript</option>
+          <option value="#tuitorialspy">Python</option>
+          <option value="five">IT</option>
+          <option value="six">Management</option>
+          <option value="sev">Blockchain</option>
+          <option value="eight">English</option>
+        </select>
+    </label>-->
+    <a href="start.html" class="home-intro"><label>Confused from Where To Start ?</label></a><br><br>
+    <label for="signin"><a href="signup.html"><input type="button" value="Sign-up" class="home-sign"></a></label>
+  </div>
+  <!--end front body-->
+
+  <!--start about-->
+  <div id="about">
+    <div class="about-section">
+      <div class="container">
+        <div class="content-section">
+          <div class="title">
+            <h1>About us</h1>
+          </div>
+          <div class="content">
+            <h3>Eduglint is with you Everytime. Learn the rules like a pro, so you can break them like an artist. Together we can make your dreams come true</h3>
+            <p>What we want...is for students to get more interested in things, more involved in them, more engaged in
+              wanting to know; to have projects that they can get excited about and work on over long period of time, to
+              be stimulated to find things out their own, and can develop their thinking skills to next level.
+            </p>
+            <div class="button">
+              <a href="">Read More</a>
+            </div>
+          </div>
+          <div class="about-social">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="image/giphy8.gif" alt="" class="imgsect">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end about-->
+ 
+  <!--start courses-->
+  <div id="courses">
+    <div class="training-section">
+      <h1> Our Training Courses</h1>
+      <div class="training-container">
+        <div class="training-items">
+          <i class="bi bi-pc-display-horizontal"></i>
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <a href="start.html/#wheretostart"><button>Learn More</button></a>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-android2"></i>
+          <h3>App Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-mortarboard"></i>
+          <h3>Ethical Hacking</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-filetype-py"></i>
+          <h3>Python Training</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-pc-display-horizontal"></i>
+          <h3>Management</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-android2"></i>
+          <h3>Info-Technology</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-mortarboard"></i>
+          <h3>Trending Topics</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+        <div class="training-items">
+          <i class="bi bi-filetype-py"></i>
+          <h3>MS-Office</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae rerum blanditiis saepe rem magni eum
+            esse
+            modi, inventore accusamus, deleniti, illo dicta repellendus obcaecati?</p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end courses-->
+
+  <!--start teams-->
+  <div id="teams">
+    <section class="team-section">
+      <div class="team-container">
+        <div class="row">
+          <div class="section-title">
+            <h1>Our Team</h1>
+            <p>Our designers and teams that helps to build this Website.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="team-items">
+            <div class="item">
+              <img src="image/prf.jpg" alt="team" />
+              <div class="inner">
+                <div class="info">
+                  <h5>Diwakar Jaiswal</h5>
+                  <p>Developer</p>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/diwakar__chaudhary__?igshid=ZDdkNTZiNTM="><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/prf.jpg" alt="team" />
+              <div class="inner">
+                <div class="info">
+                  <h5>Diwakar Jaiswal</h5>
+                  <p>Audience</p>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/prf.jpg" alt="team" />
+              <div class="inner">
+                <div class="info">
+                  <h5>Diwakar Jaiswal</h5>
+                  <p>Audience</p>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <img src="image/prf.jpg" alt="team" />
+              <div class="inner">
+                <div class="info">
+                  <h5>Diwakar Jaiswal</h5>
+                  <p>Audience</p>
+                  <div class="social-links">
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-github"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--end teams-->
+
+  <!--start contact-->
+  <footer>
+    <div id="contacts">
+
+      <div class="content-footer">
+        <div class="profil">
+          <div class="logo-area">
+            <img src="image/roundlogo.png" alt="">
+            <span class="logo-name">EDUGLINT</span>
+            <button id="dark-mode" class="moon"><i class="bi bi-moon-fill"></i></button>
+            <button id="light-mode" class="sun"><i class="bi bi-sun-fill"></i></button>
+          </div>
+          <div class="desc-area">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iure beatae vel corrupti dolores
+              voluptatem.</p>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/diwakar__chaudhary__?igshid=ZDdkNTZiNTM="><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-github"></i></a>
+
+          </div>
+        </div>
+        <div class="service-area">
+          <ul class="service-header">
+            <li class="service-name">Skills Course</li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">App development</a></li>
+            <li><a href="#">Ethical Hacking</a></li>
+            <li><a href="#">MS-office</a></li>
+          </ul>
+          <ul class="service-header">
+            <li class="service-name">Syllabus</li>
+            <li><a href="#">Information technology</a></li>
+            <li><a href="#">Management</a></li>
+            <li><a href="#">Maths</a></li>
+            <li><a href="#">English </a></li>
+          </ul>
+          <ul class="service-header">
+            <li class="service-name">Company</li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="https://instagram.com/diwakar__chaudhary__?igshid=ZDdkNTZiNTM=">Contact Us</a></li>
+            <li><a href="#">Join us</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-bottom">
+        <div class="copy-right">
+          <i class="bi bi-c-circle-fill"></i>
+          <span>2023 EduGlint</span>
+        </div>
+        <div class="tou">
+
+          <a href="terms.html">Terms of use</a>
+          <a href="terms.html">Privacy policy</a>
+          <a href="terms.html">Cookies</a>
+          <span><a href="#home" class="homeup"><i class="bi bi-arrow-up-circle-fill"></i></span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--end contact-->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="javascript/main.js"></script>
+  <script src="javascript/gpttt.js"></script>
+</body>
+
+</html>

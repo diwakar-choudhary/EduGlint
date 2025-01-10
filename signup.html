@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EduGlint</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--bootstrap icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!--style-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        #header {
+            width: 100%;
+            height: 75px;
+            background-color: #3030ca;
+            position: sticky;
+            top: 0px;
+        }
+
+        .logo-edu {
+            height: 40px;
+            width: 155px;
+            margin-top: 15px;
+            margin-left: 50px;
+        }
+
+        .head-uno {
+            float: right;
+        }
+
+        .head-list {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0px 15px;
+
+        }
+
+        .head-link {
+            color: white;
+            font-size: 17px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            padding: 7px;
+            text-decoration: none;
+        }
+
+        .head-link:hover {
+            font-size: 19px;
+            border: 2px solid #ff96ad;
+            background: #ff96ad;
+            box-shadow: 0 0 10px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+            border-radius: 5px;
+        }
+
+        #check {
+            display: none;
+        }
+
+        .checkbtn {
+            font-size: 30px;
+            color: rgb(192, 38, 38);
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+        }
+
+        #suggestions {
+            align-items: center;
+            justify-content: center;
+            color: fff;
+            height: 600px;
+        }
+
+        .container {
+            width: 40%;
+            background: #000;
+            /* box-shadow: 0 0 8px rgba(162, 38, 38, 0.6);*/
+            box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+            /*opacity: 0.6;*/
+            margin-top: 50px;
+        }
+
+        .container form {
+            width: 100%;
+            text-align: center;
+            padding: 25px 50px;
+        }
+
+        form h1 {
+            padding: 10px 0;
+            color: wheat;
+            font-weight: bolder;
+        }
+        .id i {
+            font-size: 20px;
+           transform: translatey(-50%);
+            color: wheat;
+            float: right;
+            margin-top: -37px;
+            margin-right: 20px;
+        }
+
+        form input {
+            width: 100%;
+            height: 60px;
+            margin: 4px 0;
+            border: 1px solid grey;
+            border-radius: 3px;
+            background: #181717;
+            padding: 0 15px;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        form button {
+            margin-top: 5px;
+            /* margin-left: 15px;*/
+            border: none;
+            background: aqua;
+            color: black;
+            padding: 10px 0;
+            width: 70%;
+            font-size: 20px;
+            font-weight: 900;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border: 1 px solid rgb(139, 184, 184);
+            color: aqua;
+            transition: all 0.3s ease;
+        }
+
+        form input:focus::placeholder,
+        form textarea:focus::placeholder {
+            border: 1 px solid white;
+            color: rgb(208, 50, 26);
+            transition: all 0.3s ease;
+        }
+
+        @media (max-width: 870px) {
+            .checkbtn {
+                display: block;
+            }
+
+            .head-uno {
+                position: fixed;
+                width: 70%;
+                height: 100vh;
+                background: rgb(18, 8, 161);
+                top: 75px;
+                left: -80%;
+                text-align: center;
+                transition: all .5s;
+
+            }
+
+            .head-list {
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+
+            .head-link {
+                font-size: 20px;
+            }
+
+            .head-link:hover {
+                background: none;
+                color: white;
+            }
+
+            #check:checked~.head-uno {
+                left: 0;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .logo-edu {
+                margin-left: 10px;
+            }
+
+            .checkbtn {
+                margin-right: 10px;
+            }
+        }
+
+        @media (max-width: 1050px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .container form {
+                width: 90%;
+                text-align: center;
+                padding: 0px;
+            }
+
+            form input {
+                font-size: 15px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--start header-->
+    <div id="header">
+        <label class="logo"><img src="image/logomod.png" alt="logo" class="logo-edu"></label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </label>
+        <ul class="head-uno">
+            <li class="head-list"><a class="head-link" href="index.html">Home</a></li>
+            <li class="head-list"><a class="head-link" href="index.html">About</a></li>
+            <li class="head-list"><a class="head-link" href="index.html">Courses</a></li>
+            <li class="head-list"><a class="head-link" href="index.html">Teams</a></li>
+            <li class="head-list"><a class="head-link" href="index.html">Contacts</a></li>
+        </ul>
+    </div>
+    <!--end header-->
+    <!--Start suggestion-->
+    <div id="suggestions">
+        <section>
+            <div class="container">
+                <form>
+                    <h1>Sign-up</h1>
+                    <div class="id">
+                        <input type="text" placeholder=" Full name">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="id">
+                        <input type="text" placeholder="Enter your institute name">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div class="id">
+                        <input type="email" placeholder="Email address">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="id">
+                        <input type="password" placeholder="Enter email's password">
+                        <i class="bi bi-lock-fill"></i>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <!--end suggestion-->
+</body>
+
+</html>
